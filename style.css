@@ -1,0 +1,156 @@
+/* IMPORTING POPPINS FROM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Cedarville+Cursive&family=Kalam:wght@300;400;700&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #CAD5E2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* styling the main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 340px;
+    max-width: 600px;
+    height: 40vh;
+    background: #fff;
+    padding: 50px 20px 20px 20px;
+    border-radius: 6px;
+    gap: 20px;
+
+    /* box shadow */
+    box-shadow:
+        0px 2.2px 2.2px rgba(0, 0, 0, 0.031),
+        0px 5.4px 5.3px rgba(0, 0, 0, 0.044),
+        0px 10.1px 10px rgba(0, 0, 0, 0.055),
+        0px 18.1px 17.9px rgba(0, 0, 0, 0.066),
+        0px 33.8px 33.4px rgba(0, 0, 0, 0.079),
+        0px 81px 80px rgba(0, 0, 0, 0.11)
+        ;
+}
+
+/* styling temperature icon */
+.bi-thermometer-sun {
+    display: none;
+}
+
+/* title */
+.title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* input styling */
+input {
+    outline: 0;
+    border: 0;
+    font-size: 16px;
+    background: #f3f3f3e1;
+    width: 88%;
+    height: 45px;
+    border-radius: 6px;
+    padding-left: 15px;
+}
+
+
+/* styling select and its child */
+select {
+    width: 92%;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    padding-left: 15px;
+    transition: box-shadow 0.3s ease-in-out; 
+}
+
+select:focus {
+    outline: none;
+}
+
+
+/* convert btn */
+.btn {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    width: 92%;
+    height: 45px;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background: #FF6263;
+    color: #fff;
+}
+
+/* styling result */
+#result {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2ab315;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 450px) {
+
+    body {
+        overflow: hidden;
+        background: #fff;
+    }
+
+    .container {
+        justify-content: center;
+        min-width: 100%;
+        max-width: 600px;
+        height: 100%;
+        overflow: hidden;
+        box-shadow: none;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .bi-thermometer-sun {
+        display: block;
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    input {
+        background: #f3f3f3e1;
+        width: 80%;
+        height: 45px;
+        border-radius: 6px;
+        padding-left: 15px;
+    }
+
+    select {
+        width: 85%;
+    }
+    
+    .btn {
+        width: 85%;
+    }
+}

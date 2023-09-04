@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Webesite Title -->
+    <title>Temperature Converter</title>
+
+    <!-- Custom Css File -->
+    <link rel="stylesheet" href="./style.css">
+
+
+    <!-- BOOTSTRAP ICONS CDN LINK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <div class="container">
+        <i class="bi bi-thermometer-sun"></i>
+        <h1 class="title">Temperature Converter</h1>
+        <!-- <label for="temperature">Enter temperature:</label> -->
+        <input type="number" id="temperature" placeholder="Enter temperature" step="0.01">
+
+        <!-- dropdown menu -->
+        <select id="fromUnit">
+            <option value="#">Choose temperature scale</option>
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+
+        <button class="btn" onclick="convertTemperature()">Convert</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
